@@ -1,5 +1,5 @@
 """Regression tests for composition tolerance and strict delivery contracts."""
-import sys,tempfile,unittest
+import sys,tempfile,unittest,subprocess,json
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'skills/kairo-design/scripts'))
 from platform_images import matches_ratio,effective_ratio,inspect
@@ -36,4 +36,21 @@ class SizePolicyTests(unittest.TestCase):
             self.assertLess(r['ratio_relative_error'],0.02)
             self.assertFalse(inspect(f,dict(p,ratio_policy='strict'))['passed'])
             self.assertFalse(inspect(f,dict(p,width=1920,height=820))['passed'])
+    def test_cli_fallback_check_export_and_strict(self):
+        script=Path(__file__).resolve().parents[1]/'skills/kairo-design/scripts/platform_images.py'
+        with tempfile.TemporaryDirectory() as d:
+            source=Path(d)/'source.png';output=Path(d)/'export.png'
+            Image.new('RGB',(1916,821),'white').save(source)
+            common=['--input',str(source),'--preset','x-article-cover','--generation-aspect-ratio','21:9']
+            checked=subprocess.run([sys.executable,str(script),'check',*common],capture_output=True,text=True)
+            self.assertEqual(checked.returncode,0,checked.stdout)
+            metadata=json.loads(checked.stdout)
+            self.assertEqual(metadata['target_ratio'],'5:2')
+            self.assertEqual(metadata['generation_ratio'],'21:9')
+            exported=subprocess.run([sys.executable,str(script),'export',*common,'--output',str(output)],capture_output=True,text=True)
+            self.assertEqual(exported.returncode,0,exported.stdout)
+            with Image.open(output) as im:self.assertEqual(im.size,(1916,821))
+            strict=subprocess.run([sys.executable,str(script),'check',*common,'--strict-ratio'],capture_output=True,text=True)
+            self.assertNotEqual(strict.returncode,0)
+            self.assertEqual(json.loads(strict.stdout)['generation_ratio'],'5:2')
 if __name__=='__main__':unittest.main()

@@ -50,3 +50,14 @@
 - 用户明确说“严格”“精确”“必须完全一致”，或已核实上传接口有硬性尺寸约束时，用 `ratio_policy=strict`；严格比例按精确分数检查，明确的像素要求仍逐像素核对，不能被工具回退覆盖。用户之后表示当前尺寸可用，按最新要求恢复近似策略，不重复追问已接受的偏差。
 - 显著偏差超过2%时先核对工具的实际画幅选择与图片方向，再调整生成；不要先把它判为审美失败。检查结果记录目标、生成画幅、真实像素及偏差。不能把近似通过称为数学精确，也不必在每次交付中放大无碍使用的尾差。
 - 命令行默认近似检查；明确严格要求时加 `--strict-ratio`。原图完整保留，容差不授权裁切、拉伸、加边或放大。
+
+### 最近画幅的命令行检查
+
+工具不支持目标比例时，在任务记录保留原目标，并将实际选择的工具画幅传给检查或导出命令。例如已确认当前工具以21:9替代X文章封面的5:2时：
+
+```bash
+python3 scripts/platform_images.py check --input final.png --preset x-article-cover --generation-aspect-ratio 21:9
+python3 scripts/platform_images.py export --input source.png --preset x-article-cover --generation-aspect-ratio 21:9 --output final.png
+```
+
+`--generation-aspect-ratio` 只记录已选用的工具画幅，不自动推测工具能力，也不授权随意更改构图方向。严格模式仍检查原请求，不能用此参数绕过。

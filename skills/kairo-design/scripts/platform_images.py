@@ -206,6 +206,7 @@ def main():
         p = sub.add_parser(command)
         p.add_argument('--input', type=Path, required=True)
         p.add_argument('--preset')
+        p.add_argument('--generation-aspect-ratio', help='Actual tool-supported composition ratio when the requested ratio is unavailable.')
         p.add_argument('--strict-ratio', action='store_true', help='Require mathematically exact ratio only when explicitly requested.')
         p.add_argument('--width', type=int)
         p.add_argument('--height', type=int)
@@ -235,6 +236,8 @@ def main():
                       'profiles': {k: v for k, v in config['profiles'].items() if v['platform'] in selected}}
         else:
             profile = dict(target(args))
+            if args.generation_aspect_ratio:
+                profile['generation_aspect_ratio'] = args.generation_aspect_ratio
             if args.strict_ratio:
                 profile['ratio_policy'] = 'strict'
             result = inspect(args.input, profile) if args.command == 'check' else export(args, profile)
