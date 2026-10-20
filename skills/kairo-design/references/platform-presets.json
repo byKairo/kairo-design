@@ -1,0 +1,178 @@
+{
+  "checked_on": "2026-10-20",
+  "defaults": {
+    "wechat": [
+      "wechat-cover"
+    ],
+    "xiaohongshu": [
+      "xhs-note"
+    ],
+    "x": [
+      "x-post"
+    ],
+    "wechat-picture": [
+      "wechat-picture"
+    ],
+    "generic": [
+      "generic-image"
+    ]
+  },
+  "profiles": {
+    "wechat-cover": {
+      "platform": "wechat",
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "max_bytes": null,
+      "note": "wechat-cover：本库用途比例预设；默认高清，实际像素由模型能力决定，非平台唯一规格。",
+      "aspect_ratio": "2.35:1",
+      "pixel_unit": "px",
+      "dimension_basis": "skill-aspect-ratio-preset"
+    },
+    "wechat-square": {
+      "platform": "wechat",
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "max_bytes": null,
+      "note": "wechat-square：本库用途比例预设；默认高清，实际像素由模型能力决定，非平台唯一规格。",
+      "aspect_ratio": "1:1",
+      "pixel_unit": "px",
+      "dimension_basis": "skill-aspect-ratio-preset"
+    },
+    "wechat-body": {
+      "platform": "wechat",
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "max_bytes": null,
+      "note": "wechat-body：本库用途比例预设；默认高清，实际像素由模型能力决定，非平台唯一规格。",
+      "aspect_ratio": "3:2",
+      "pixel_unit": "px",
+      "dimension_basis": "skill-aspect-ratio-preset"
+    },
+    "xhs-note": {
+      "platform": "xiaohongshu",
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "max_bytes": 32000000,
+      "note": "xhs-note：本库用途比例预设；默认高清，实际像素由模型能力决定，非平台唯一规格。",
+      "aspect_ratio": "3:4",
+      "pixel_unit": "px",
+      "dimension_basis": "skill-aspect-ratio-preset"
+    },
+    "xhs-square": {
+      "platform": "xiaohongshu",
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "max_bytes": 32000000,
+      "note": "xhs-square：本库用途比例预设；默认高清，实际像素由模型能力决定，非平台唯一规格。",
+      "aspect_ratio": "1:1",
+      "pixel_unit": "px",
+      "dimension_basis": "skill-aspect-ratio-preset"
+    },
+    "xhs-landscape": {
+      "platform": "xiaohongshu",
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "max_bytes": 32000000,
+      "note": "xhs-landscape：本库用途比例预设；默认高清，实际像素由模型能力决定，非平台唯一规格。",
+      "aspect_ratio": "4:3",
+      "pixel_unit": "px",
+      "dimension_basis": "skill-aspect-ratio-preset"
+    },
+    "x-post": {
+      "platform": "x",
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "max_bytes": 5000000,
+      "note": "x-post：本库用途比例预设；默认高清，实际像素由模型能力决定，非平台唯一规格。",
+      "aspect_ratio": "16:9",
+      "pixel_unit": "px",
+      "dimension_basis": "skill-aspect-ratio-preset"
+    },
+    "x-square": {
+      "platform": "x",
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "max_bytes": 5000000,
+      "note": "x-square：本库用途比例预设；默认高清，实际像素由模型能力决定，非平台唯一规格。",
+      "aspect_ratio": "1:1",
+      "pixel_unit": "px",
+      "dimension_basis": "skill-aspect-ratio-preset"
+    },
+    "x-portrait": {
+      "platform": "x",
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "max_bytes": 5000000,
+      "note": "x-portrait：本库用途比例预设；默认高清，实际像素由模型能力决定，非平台唯一规格。",
+      "aspect_ratio": "4:5",
+      "pixel_unit": "px",
+      "dimension_basis": "skill-aspect-ratio-preset"
+    },
+    "x-article-cover": {
+      "platform": "x",
+      "formats": [
+        "JPEG",
+        "PNG"
+      ],
+      "max_bytes": null,
+      "note": "x-article-cover：本库用途比例预设；默认高清，实际像素由模型能力决定，非平台唯一规格。",
+      "aspect_ratio": "5:2",
+      "pixel_unit": "px",
+      "dimension_basis": "skill-aspect-ratio-preset"
+    },
+    "wechat-picture": {
+      "platform": "wechat-picture",
+      "aspect_ratio": "3:4",
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "max_bytes": null,
+      "dimension_basis": "skill-aspect-ratio-preset",
+      "note": "本库用途比例预设；默认高清，像素依模型能力选择。"
+    },
+    "x-article-body": {
+      "platform": "x",
+      "aspect_ratio": "16:9",
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "max_bytes": null,
+      "dimension_basis": "skill-aspect-ratio-preset",
+      "note": "本库用途比例预设；默认高清，像素依模型能力选择。"
+    },
+    "generic-image": {
+      "platform": "generic",
+      "aspect_ratio": "3:4",
+      "formats": [
+        "PNG",
+        "JPEG"
+      ],
+      "max_bytes": null,
+      "dimension_basis": "skill-aspect-ratio-preset",
+      "note": "本库用途比例预设；默认高清，像素依模型能力选择。"
+    }
+  },
+  "resolution_policy": "高清；像素依当前模型能力选择，不固定默认像素，不裁切、不拉伸。 默认画幅近似，容差2%；工具不支持时自动采用最近画幅并说明，严格要求另行精确检查。",
+  "ratio_policy": "approximate",
+  "ratio_tolerance_relative": 0.02
+}

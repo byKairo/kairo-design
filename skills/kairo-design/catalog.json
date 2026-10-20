@@ -1,0 +1,2283 @@
+{
+  "version": 1,
+  "styles": [
+    {
+      "id": "anthropic-brand-editorial",
+      "name": "Anthropic 品牌编辑视觉",
+      "family": "brand-editorial",
+      "parent_style": null,
+      "aliases": [
+        "Anthropic 风格",
+        "Anthropic Research 风格",
+        "Anthropic 品牌风格"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "anthropic-brand-editorial",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "温和理性的观点与观察",
+              "需要概念图像与编辑秩序共同表达的内容",
+              "研究与思考的阅读气质",
+              "品牌语汇一致的系列封面"
+            ],
+            "avoid_for": [
+              "主要任务需要沉浸的摄影或实体材料触感，编辑图形转译会削弱重点",
+              "要求复现特定官方活动视觉而未提供对应的官方素材，不能用本入口概括代替"
+            ],
+            "keywords": [
+              "Anthropic",
+              "研究编辑",
+              "暖中性色",
+              "手绘图形",
+              "品牌视觉",
+              "字形层级"
+            ],
+            "risks": [
+              "只模仿米白底和陶土色而缺乏整体身份",
+              "误称官方主标题必须是衬线字",
+              "图形变成与内容无关的节点或随手涂线",
+              "同一系列任意改变共同笔触气质、色彩角色或阅读语气",
+              "将中文适配、品牌色近似或虚构标志声称为官方资产",
+              "将研究封面的衬线适配与官方页面无衬线标题混写",
+              "中文字面过密、过重，破坏整体阅读语气",
+              "只核对主题表达而把风格偏离候选判为通过",
+              "凭无字插画推断官方字体",
+              "把字图统一理解为所有线条同粗，忽略各自视觉重量与信息角色",
+              "将某款手写字体锁定为风格身份，或把字形灵活适配理解为逐字随机变形",
+              "把手绘标题当作默认要求，或在手绘子型中用噪点代替字形处理",
+              "研究编辑规则被误当成全品牌通用规范"
+            ],
+            "confusable_with": [
+              {
+                "id": "expressive-ink-line",
+                "difference": "钢笔速写以现场手势、复描与线束节奏主导；Anthropic 品牌编辑视觉由暖中性色、编辑排字与研究图形共同成立，线条相似不足以互相替代。"
+              },
+              {
+                "id": "geometric-flat-illustration",
+                "difference": "几何插画由实色色面与概括形体关系主导；Anthropic 品牌编辑视觉由品牌色彩、编辑排字与概念图形的组合主导。"
+              },
+              {
+                "id": "swiss-international",
+                "difference": "瑞士以无衬线、非对称网格与信息秩序主导；Anthropic 品牌编辑视觉还需暖色体系、概念图形与清楚的阅读层级共同建立身份。"
+              }
+            ],
+            "selection_basis": "以概念轮廓、手绘或几何图形及清楚的编辑排字形成理性的品牌编辑视觉。 中文适配需保持所选子型的字图关系，不编造官方字体。"
+          }
+        },
+        "wordless": {
+          "status": "conditional",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "anthropic-brand-editorial",
+            "mode": "wordless",
+            "status": "conditional",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "自由手绘线与实色色面形成清楚关系",
+              "图像轮廓、间隔与手绘节奏"
+            ],
+            "avoid_for": [
+              "主要任务需要沉浸的摄影或实体材料触感，编辑图形转译会削弱重点",
+              "要求复现特定官方活动视觉而未提供对应的官方素材，不能用本入口概括代替"
+            ],
+            "keywords": [
+              "概念轮廓",
+              "暖中性色",
+              "手绘线",
+              "实色色面"
+            ],
+            "risks": [
+              "只有米白或陶土底",
+              "通用节点脑图",
+              "虚构品牌资产",
+              "凭无字图像推断官方字体。"
+            ],
+            "confusable_with": [
+              {
+                "id": "expressive-ink-line",
+                "difference": "本入口：仅作所选品牌图像语言的无字适配：概念轮廓、自由手绘线与实色色面共同构形。 相邻入口：从观察视点出发，让线群随动作、透视和轮廓转折聚散；纸白接续空间。"
+              },
+              {
+                "id": "geometric-flat-illustration",
+                "difference": "本入口：仅作所选品牌图像语言的无字适配：概念轮廓、自由手绘线与实色色面共同构形。 相邻入口：以实色色面之间的面积差、方向和遮挡组织主形；即使没有细节，剪影和负形也要值得看。"
+              }
+            ],
+            "selection_basis": "以概念轮廓、手绘或几何图形及实色色面组织无字画面，保持清楚的编辑秩序；不宣称官方无字规范。",
+            "conditions": [
+              "不编造官方无字规范，不生成虚构品牌资产；用户指定品牌图像时按其所给图像处理。"
+            ]
+          }
+        }
+      },
+      "identity": "以概念轮廓、手绘或几何图形及清楚的编辑排字形成理性的品牌编辑视觉。"
+    },
+    {
+      "id": "architectural-light-scene",
+      "name": "建筑光影",
+      "family": "photography",
+      "parent_style": null,
+      "aliases": [
+        "建筑光影场景"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "architectural-light-scene",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "边界与进入",
+              "尺度与距离",
+              "安静与独处",
+              "敬畏",
+              "被看见",
+              "冷峻与疏离",
+              "压迫与突破"
+            ],
+            "avoid_for": [
+              "核心信息必须靠表情、互动或事件细节传达，建筑与光仅作背景"
+            ],
+            "keywords": [
+              "建筑",
+              "光影",
+              "明暗",
+              "体量",
+              "透视"
+            ],
+            "risks": [
+              "建筑漂亮但光只作均匀照明，缺少视觉重点",
+              "光源、透光或投影关系不可信",
+              "将常见元素机械禁用，或每次重复同一构图"
+            ],
+            "confusable_with": [
+              {
+                "id": "editorial-photo-scene",
+                "difference": "建筑光影由体量及光的明暗形状主导；叙事摄影由同一镜头里的事件、处境与环境线索主导。"
+              }
+            ],
+            "selection_basis": "建筑框住、过滤或截断光，体量与亮暗形状承担主视觉，人物可提供尺度；若核心是人物事件，建筑只作环境，选叙事摄影。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "architectural-light-scene",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "光与体量形成的空间体验",
+              "墙厚、折面、尺度与观看距离",
+              "明暗与材质的细微变化"
+            ],
+            "avoid_for": [
+              "核心信息必须靠表情、互动或事件细节传达，建筑与光仅作背景"
+            ],
+            "keywords": [
+              "建筑",
+              "光影",
+              "明暗",
+              "体量",
+              "透视"
+            ],
+            "risks": [
+              "只有漂亮光斑",
+              "光源与投影互相矛盾",
+              "建筑被普通夕阳滤镜代替。"
+            ],
+            "confusable_with": [
+              {
+                "id": "editorial-photo-scene",
+                "difference": "建筑光影由体量及光的明暗形状主导；叙事摄影由同一镜头里的事件、处境与环境线索主导。"
+              }
+            ],
+            "selection_basis": "建筑框住、过滤或截断光，体量与亮暗形状承担主视觉，人物可提供尺度；若核心是人物事件，建筑只作环境，选叙事摄影。"
+          }
+        }
+      },
+      "identity": "由建筑实体、开口、受光面和真实投影共同构成的摄影式空间造型。"
+    },
+    {
+      "id": "decorative-illustration",
+      "name": "装饰纹样插画",
+      "family": "graphic-design",
+      "parent_style": null,
+      "aliases": [
+        "装饰插画",
+        "装饰性插画"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "decorative-illustration",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "节庆",
+              "丰盛",
+              "群体活动",
+              "自然",
+              "文化情绪"
+            ],
+            "avoid_for": [
+              "任务要求几乎无纹样的克制留白，重复装饰会抢占重点",
+              "需要准确记录现场或数据，母题的概括与节奏化会改变证据"
+            ],
+            "keywords": [
+              "纹样",
+              "重复",
+              "层叠",
+              "群像",
+              "色域"
+            ],
+            "risks": [
+              "满铺花纹导致失焦",
+              "随意使用民族符号",
+              "所有细节同等强烈"
+            ],
+            "confusable_with": [
+              {
+                "id": "geometric-flat-illustration",
+                "difference": "装饰纹样由母题反复、变奏和疏密主导；几何插画由概括形体之间的动作、方向和尺度关系主导。"
+              },
+              {
+                "id": "limited-ink-overprint",
+                "difference": "装饰纹样以母题节奏主导；套色以可辨透明色版及交叠混色主导。"
+              }
+            ],
+            "selection_basis": "主体由主题母题的重复、局部变奏和疏密组织成装饰节奏；重复本身承担表达。几何形只是素材时不自动归几何，物件多或图案丰富也不自动归装饰。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "decorative-illustration",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "重复母题与变奏",
+              "轮廓、负形、间隔与色域的装饰组织"
+            ],
+            "avoid_for": [
+              "任务要求几乎无纹样的克制留白，重复装饰会抢占重点",
+              "需要准确记录现场或数据，母题的概括与节奏化会改变证据"
+            ],
+            "keywords": [
+              "纹样",
+              "重复",
+              "层叠",
+              "群像",
+              "色域"
+            ],
+            "risks": [
+              "图案等大等距均匀填满",
+              "装饰掩盖主体",
+              "把任意文化纹样当通用花边。"
+            ],
+            "confusable_with": [
+              {
+                "id": "geometric-flat-illustration",
+                "difference": "装饰纹样由母题反复、变奏和疏密主导；几何插画由概括形体之间的动作、方向和尺度关系主导。"
+              },
+              {
+                "id": "limited-ink-overprint",
+                "difference": "装饰纹样以母题节奏主导；套色以可辨透明色版及交叠混色主导。"
+              }
+            ],
+            "selection_basis": "主体由主题母题的重复、局部变奏和疏密组织成装饰节奏；重复本身承担表达。几何形只是素材时不自动归几何，物件多或图案丰富也不自动归装饰。"
+          }
+        }
+      },
+      "identity": "以主题母题的重复、变奏和纹样化轮廓形成的平面插画造型。"
+    },
+    {
+      "id": "diffuse-color-field",
+      "name": "色域构成",
+      "family": "graphic-design",
+      "parent_style": null,
+      "aliases": [
+        "弥散色场",
+        "渐变海报",
+        "弥散渐变／色域构成",
+        "弥散渐变",
+        "色场构成"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "diffuse-color-field",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "情绪过渡",
+              "张力",
+              "开放",
+              "不确定性"
+            ],
+            "avoid_for": [
+              "必须仅靠图像讲清人物行动、因果或数值；抽象色域无法独立提供这些信息",
+              "主要看点是可辨的材料结构与触感，模糊过渡会消解所需细节"
+            ],
+            "keywords": [
+              "色域",
+              "色场",
+              "弥散渐变",
+              "渐变",
+              "颗粒",
+              "平面构成"
+            ],
+            "risks": [
+              "漂亮但与文章无关的壁纸",
+              "默认蓝橙夕阳",
+              "形状没有节奏"
+            ],
+            "confusable_with": [
+              {
+                "id": "swiss-international",
+                "difference": "色域构成由色块面积、边界及过渡主导；瑞士由网格与信息层级主导，使用渐变背景不等于色域构成。"
+              }
+            ],
+            "selection_basis": "以色域的面积、邻接、边界和方向承担主视觉；弥散渐变是柔边过渡子型。色块仅作照片或排字的背景时不选此入口，事件辨识按用途由文字或其他线索支持。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "diffuse-color-field",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "相邻色域与软硬边的相互作用",
+              "面积、过渡速度与光感",
+              "非叙事的色彩体验"
+            ],
+            "avoid_for": [
+              "必须仅靠图像讲清人物行动、因果或数值；抽象色域无法独立提供这些信息",
+              "主要看点是可辨的材料结构与触感，模糊过渡会消解所需细节"
+            ],
+            "keywords": [
+              "渐变",
+              "色场",
+              "颗粒",
+              "平面构成"
+            ],
+            "risks": [
+              "用未发展的常见渐变模板代替具体色彩判断",
+              "用平均噪点掩盖过渡问题",
+              "把抽象色场解释成准确因果或数据"
+            ],
+            "confusable_with": [
+              {
+                "id": "swiss-international",
+                "difference": "本入口：色域面积、流向与软硬边界构成画面本身；先判断视觉张力，再决定与文章气氛的联系。 相邻入口：只作瑞士构成方法的无字适配：用比例、非对称平衡、几何序列或摄影裁切形成独立视觉秩序。"
+              }
+            ],
+            "selection_basis": "色域面积、扩散速度、软硬边界及过渡方向构成图像，颗粒或扫描感只作为可选表面语言。 无字路线按本图的独立观看潜力与媒介能力选择，文章关系可在构思中形成或最后核对。"
+          }
+        }
+      },
+      "identity": "以色域面积、邻接、软硬边界与过渡方向构成图像，弥散渐变是柔边过渡的一种子型。"
+    },
+    {
+      "id": "dry-crayon-illustration",
+      "name": "干擦蜡笔插画",
+      "family": "line-and-print",
+      "parent_style": null,
+      "aliases": [
+        "干擦蜡笔插画",
+        "蜡笔插画",
+        "干擦蜡笔"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "dry-crayon-illustration",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "日常观察",
+              "行动与表达",
+              "关系与情绪",
+              "户外与生活",
+              "具有手绘力度的叙事"
+            ],
+            "avoid_for": [
+              "要求无手绘痕迹的精密边界与光洁表面",
+              "主要表达依赖硬质体量和准确光暗切面，手势笔触会分散重点"
+            ],
+            "keywords": [
+              "蜡笔",
+              "干笔触",
+              "纸底",
+              "手绘",
+              "叠涂"
+            ],
+            "risks": [
+              "均匀颗粒冒充随形干擦",
+              "笔触吞没动作或字形"
+            ],
+            "confusable_with": [
+              {
+                "id": "geometric-flat-illustration",
+                "difference": "蜡笔以随形干擦与露纸塑形；几何以实色硬边塑形。"
+              },
+              {
+                "id": "expressive-ink-line",
+                "difference": "蜡笔以侧锋色块为主；速写以观察线与纸白为主。"
+              }
+            ],
+            "selection_basis": "侧锋色块、随形干擦、叠涂与露纸共同塑造形体的蜡笔插画。适合用文字与图像共同呈现主题。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "dry-crayon-illustration",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "侧锋色块、叠涂与露底",
+              "笔触塑形的人物、静物与空间"
+            ],
+            "avoid_for": [
+              "要求无手绘痕迹的精密边界与光洁表面"
+            ],
+            "keywords": [
+              "蜡笔",
+              "干笔触",
+              "纸底",
+              "手绘",
+              "叠涂"
+            ],
+            "risks": [
+              "均匀颗粒冒充随形干擦",
+              "笔触吞没动作和形体关系"
+            ],
+            "confusable_with": [
+              {
+                "id": "geometric-flat-illustration",
+                "difference": "蜡笔以随形干擦与露纸塑形；几何以实色硬边塑形。"
+              },
+              {
+                "id": "expressive-ink-line",
+                "difference": "蜡笔以侧锋色块为主；速写以观察线与纸白为主。"
+              }
+            ],
+            "selection_basis": "侧锋色块、随形干擦、叠涂与露纸共同塑造形体的蜡笔插画。适合以纯画面呈现动作、关系或气氛。"
+          }
+        }
+      },
+      "identity": "侧锋色块、随形干擦、叠涂与露纸共同塑造形体的蜡笔插画。"
+    },
+    {
+      "id": "editorial-design",
+      "name": "字图穿插",
+      "family": "graphic-design",
+      "parent_style": null,
+      "aliases": [
+        "编辑设计"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "editorial-design",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "观点",
+              "人物",
+              "空间",
+              "文化",
+              "杂志式阅读"
+            ],
+            "avoid_for": [
+              "明确无字且不允许文字形体的图片",
+              "锁定版式要求文字与图像完整分开，不能形成共享轮廓或遮挡"
+            ],
+            "keywords": [
+              "字图穿插",
+              "轮廓共用",
+              "遮挡",
+              "图底",
+              "文字空间"
+            ],
+            "risks": [
+              "装饰碎字或假期刊信息替代真实内容；辅助英文过小而无法阅读",
+              "标题尺度、字面宽高与空隙不合，阅读节奏失效或填景被切碎",
+              "必要文字错误或穿插后无法辨认；也可能为露出文字而破坏原有空间层次",
+              "取景形成的空间与文字编排无关；为了版式扭曲本应可信的主体结构"
+            ],
+            "confusable_with": [
+              {
+                "id": "swiss-international",
+                "difference": "字图穿插由共享轮廓或遮挡空间主导；瑞士由无衬线、非对称网格和信息层级主导。"
+              }
+            ],
+            "selection_basis": "文字与图像共享轮廓、遮挡或空间，字形成为图像结构的一部分；这种交界关系承担主要表达。一般分栏、图旁排字和阅读层级属于通用编排，不足以选择此入口。"
+          }
+        },
+        "wordless": {
+          "status": "conditional",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "editorial-design",
+            "mode": "wordless",
+            "status": "conditional",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "画面为主，少量关键词与主体共享轮廓或前后空间"
+            ],
+            "avoid_for": [
+              "要求绝对无文字",
+              "需要完整标题或辅助说明文字"
+            ],
+            "keywords": [
+              "关键词",
+              "字图穿插",
+              "共享轮廓",
+              "空间换层"
+            ],
+            "risks": [
+              "关键词扩成全标题",
+              "只把字贴在图片旁边",
+              "遮挡导致关键字不可辨"
+            ],
+            "conditions": [
+              "仅允许预先记录的少量标题关键词；用户指定优先，否则内部从原标题提取；不放完整标题或辅助文案。"
+            ],
+            "selection_basis": "关键词作为形体参与图像构成，画面仍独立成立；纯无字请求不采用此例外。"
+          }
+        }
+      },
+      "identity": "准确且有意义的字形与图像通过共享轮廓、容纳或遮挡构成结构，字图交界是身份必要条件。"
+    },
+    {
+      "id": "editorial-photo-scene",
+      "name": "叙事摄影",
+      "family": "photography",
+      "parent_style": null,
+      "aliases": [
+        "编辑摄影场景"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "editorial-photo-scene",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "人物处境",
+              "日常观察",
+              "孤独",
+              "行动"
+            ],
+            "avoid_for": [
+              "主要任务是准确比较数据或按网格检索信息，单一摄影瞬间不能替代信息结构",
+              "用户要求材料转译成为全图身份，如纱线或积木世界；真实摄影表面不应盖过材料规则"
+            ],
+            "keywords": [
+              "纪实",
+              "街拍",
+              "概念摄影",
+              "取景",
+              "光线"
+            ],
+            "risks": [
+              "通用办公图库式画面",
+              "只靠调色讲情绪",
+              "人脸与手部瑕疵",
+              "超现实场景光照不一致"
+            ],
+            "confusable_with": [
+              {
+                "id": "architectural-light-scene",
+                "difference": "建筑光影由体量及光的明暗形状主导；叙事摄影由同一镜头里的事件、处境与环境线索主导。"
+              }
+            ],
+            "selection_basis": "同一镜头内的瞬间、使用痕迹与环境线索推进处境，机位和观看距离支持叙事；建筑体量、开口与受光形状主导时，选建筑光影。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "editorial-photo-scene",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "有选择的瞬间与取景",
+              "人物、静物和环境的观看关系",
+              "光、焦点与遮挡的组织"
+            ],
+            "avoid_for": [
+              "主要任务是准确比较数据或按网格检索信息，单一摄影瞬间不能替代信息结构",
+              "用户要求材料转译成为全图身份，如纱线或积木世界；真实摄影表面不应盖过材料规则"
+            ],
+            "keywords": [
+              "纪实",
+              "街拍",
+              "概念摄影",
+              "取景",
+              "光线"
+            ],
+            "risks": [
+              "通用图库摆拍",
+              "只靠暖色调表达温暖",
+              "动作接触错误",
+              "空半幅预留文案。"
+            ],
+            "confusable_with": [
+              {
+                "id": "architectural-light-scene",
+                "difference": "本入口：先选一个可以实际看见的瞬间、触感或处境，用拍摄距离和取景决定观看重点。 相邻入口：由墙体、洞口、体量与亮暗交界组织主形；光要改变空间的读法，人物按需提供尺度。"
+              }
+            ],
+            "selection_basis": "摄影语言以可观察瞬间、机位、镜头取景和环境关系构成图像，生成场景不等于真实事件记录。 无字路线按本图的独立观看潜力与媒介能力选择，文章关系可在构思中形成或最后核对。"
+          }
+        }
+      },
+      "identity": "摄影语言以可观察瞬间、机位、镜头取景和环境关系构成图像，生成场景不等于真实事件记录。"
+    },
+    {
+      "id": "expressive-ink-line",
+      "name": "钢笔速写",
+      "family": "line-and-print",
+      "parent_style": null,
+      "aliases": [
+        "手绘墨线插画",
+        "表现性钢笔速写"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "expressive-ink-line",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "城市",
+              "人群",
+              "思绪",
+              "流动",
+              "现场感"
+            ],
+            "avoid_for": [
+              "需要准确核对工程尺寸或表面原貌，自由手势与省略会改变判断依据",
+              "主要需要细密随形刻线稳定塑造体积，应比较刻线版画"
+            ],
+            "keywords": [
+              "速写",
+              "涂线",
+              "手势",
+              "叠线",
+              "留白"
+            ],
+            "risks": [
+              "等重描边或均匀乱线",
+              "接触错误被速写感掩盖"
+            ],
+            "confusable_with": [
+              {
+                "id": "dry-crayon-illustration",
+                "difference": "速写以观察线塑形；蜡笔以干擦色块塑形。"
+              },
+              {
+                "id": "monochrome-engraved-line",
+                "difference": "速写依轻重断续与省略；版画依系统刻线明暗。"
+              },
+              {
+                "id": "anthropic-brand-editorial",
+                "difference": "速写由观察视点和线条构造主导；品牌编辑由指定品牌视觉语言主导。"
+              }
+            ],
+            "selection_basis": "由轻重断续的观察线、复描与纸白建立形体和空间的钢笔速写。适合用文字与图像共同呈现主题。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "expressive-ink-line",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "观察线的轻重、断续与省略",
+              "纸白、线束与形体关系"
+            ],
+            "avoid_for": [
+              "需要准确核对工程尺寸或表面原貌，自由手势与省略会改变判断依据",
+              "主要需要细密随形刻线稳定塑造体积，应比较刻线版画"
+            ],
+            "keywords": [
+              "速写",
+              "涂线",
+              "手势",
+              "叠线",
+              "留白"
+            ],
+            "risks": [
+              "等重描边或均匀乱线",
+              "接触错误被速写感掩盖"
+            ],
+            "confusable_with": [
+              {
+                "id": "dry-crayon-illustration",
+                "difference": "速写以观察线塑形；蜡笔以干擦色块塑形。"
+              },
+              {
+                "id": "monochrome-engraved-line",
+                "difference": "速写依轻重断续与省略；版画依系统刻线明暗。"
+              },
+              {
+                "id": "anthropic-brand-editorial",
+                "difference": "速写由观察视点和线条构造主导；品牌编辑由指定品牌视觉语言主导。"
+              }
+            ],
+            "selection_basis": "由轻重断续的观察线、复描与纸白建立形体和空间的钢笔速写。适合以纯画面呈现动作、关系或气氛。"
+          }
+        }
+      },
+      "identity": "由轻重断续的观察线、复描与纸白建立形体和空间的钢笔速写。"
+    },
+    {
+      "id": "geometric-flat-illustration",
+      "name": "几何平面插画",
+      "family": "graphic-design",
+      "parent_style": null,
+      "aliases": [
+        "几何平涂插画",
+        "几何插画"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "geometric-flat-illustration",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "关系",
+              "行动",
+              "方法",
+              "轻快的解释"
+            ],
+            "avoid_for": [
+              "辨认任务依赖照片里的具体细节或材质原貌，形体简化会丢失所需信息",
+              "主要看点是复杂表面、连续光影或真实空间体验，平面概括会削弱重点"
+            ],
+            "keywords": [
+              "扁平",
+              "色面",
+              "简化轮廓",
+              "实色"
+            ],
+            "risks": [
+              "通用图标拼盘",
+              "连续渐变取代实色色面"
+            ],
+            "confusable_with": [
+              {
+                "id": "decorative-illustration",
+                "difference": "几何关注简化主体和动作色面；装饰关注母题及重复节奏。"
+              },
+              {
+                "id": "retro-commercial-illustration",
+                "difference": "几何不限定年代比例；中期商业插画有年代造型语汇。"
+              },
+              {
+                "id": "swiss-international",
+                "difference": "几何以插画形体关系主导；瑞士以比例、对齐与编排秩序主导。"
+              },
+              {
+                "id": "dry-crayon-illustration",
+                "difference": "几何以实色边界塑形；蜡笔以随形干擦和露纸塑形。"
+              },
+              {
+                "id": "pixel-scene",
+                "difference": "几何轮廓连续；像素使用离散网格与阶梯边缘。"
+              },
+              {
+                "id": "anthropic-brand-editorial",
+                "difference": "几何不依赖品牌身份；品牌编辑须符合特定品牌视觉语言。"
+              }
+            ],
+            "selection_basis": "以简化轮廓、实色色面及色面邻接塑造形体的几何平面插画。适合用文字与图像共同呈现主题。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "geometric-flat-illustration",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "硬边实色的形体概括",
+              "轮廓、邻色、负形与比例",
+              "具象或抽象的平面组织"
+            ],
+            "avoid_for": [
+              "辨认任务依赖照片里的具体细节或材质原貌，形体简化会丢失所需信息",
+              "主要看点是复杂表面、连续光影或真实空间体验，平面概括会削弱重点"
+            ],
+            "keywords": [
+              "扁平",
+              "色面",
+              "简化轮廓",
+              "实色"
+            ],
+            "risks": [
+              "通用图标拼盘",
+              "连续渐变取代实色色面"
+            ],
+            "confusable_with": [
+              {
+                "id": "decorative-illustration",
+                "difference": "几何关注简化主体和动作色面；装饰关注母题及重复节奏。"
+              },
+              {
+                "id": "retro-commercial-illustration",
+                "difference": "几何不限定年代比例；中期商业插画有年代造型语汇。"
+              },
+              {
+                "id": "swiss-international",
+                "difference": "几何以插画形体关系主导；瑞士以比例、对齐与编排秩序主导。"
+              },
+              {
+                "id": "dry-crayon-illustration",
+                "difference": "几何以实色边界塑形；蜡笔以随形干擦和露纸塑形。"
+              },
+              {
+                "id": "pixel-scene",
+                "difference": "几何轮廓连续；像素使用离散网格与阶梯边缘。"
+              },
+              {
+                "id": "anthropic-brand-editorial",
+                "difference": "几何不依赖品牌身份；品牌编辑须符合特定品牌视觉语言。"
+              }
+            ],
+            "selection_basis": "以简化轮廓、实色色面及色面邻接塑造形体的几何平面插画。适合以纯画面呈现动作、关系或气氛。"
+          }
+        }
+      },
+      "identity": "以简化轮廓、实色色面及色面邻接塑造形体的几何平面插画。"
+    },
+    {
+      "id": "isometric-miniature-scene",
+      "name": "微缩场景",
+      "family": "constructed-scene",
+      "parent_style": null,
+      "aliases": [
+        "等距微缩场景",
+        "微缩模型",
+        "建筑地景沙盘",
+        "场景沙盘",
+        "沙盘"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "isometric-miniature-scene",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "人物与物件关系",
+              "日常或概念场景",
+              "自然与活动",
+              "过程与协作",
+              "尺度变化"
+            ],
+            "avoid_for": [
+              "要求人物面部微表情成为唯一重点",
+              "不允许模型感的真实现场证明"
+            ],
+            "keywords": [
+              "微缩",
+              "场景",
+              "沙盘",
+              "比例模型",
+              "模型细工",
+              "材料"
+            ],
+            "risks": [
+              "投影或比例关系互相冲突",
+              "只剩漂亮陈列，关键关系缺席",
+              "把微缩等同于塑料玩具或强失焦",
+              "数字场景被误称实物模型",
+              "把题材重新锁回房间、道路或建筑"
+            ],
+            "confusable_with": [
+              {
+                "id": "modular-brick-scene",
+                "difference": "微缩描述模型尺度与场景关系；积木以可装配模块及接口主导造型，微缩场景采用积木时保留其连接逻辑。"
+              },
+              {
+                "id": "knitted-textile",
+                "difference": "微缩是场景组织方式，针织是材料能力；可组合，织造不能替代空间关系与标题设计。"
+              },
+              {
+                "id": "layered-paper-relief",
+                "difference": "微缩以模型尺度呈现场景；纸雕以薄纸切折和层间空隙塑形，可按主导造型选择。"
+              },
+              {
+                "id": "pixel-scene",
+                "difference": "像素或体素由离散网格单元构形；微缩场景以模型尺度与细工呈现空间，小尺度不等于像素化。"
+              }
+            ],
+            "selection_basis": "以模型尺度、可辨体积与细工整体观察人物、自然、器物或概念关系，不要求建筑、地形或固定底座；材料依任务选择，针织可作为构造能力接入。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "isometric-miniature-scene",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "模型尺度的空间与材料",
+              "完整场地或局部生活的观看",
+              "路径、层次与剖面的组织"
+            ],
+            "avoid_for": [
+              "要求人物面部微表情成为唯一重点",
+              "不允许模型感的真实现场证明"
+            ],
+            "keywords": [
+              "建筑",
+              "地景",
+              "沙盘",
+              "比例模型",
+              "模型细工",
+              "多材料"
+            ],
+            "risks": [
+              "模型等重堆满",
+              "景深掩盖大半空间",
+              "靠标签区分功能",
+              "统一塑料化。"
+            ],
+            "confusable_with": [
+              {
+                "id": "modular-brick-scene",
+                "difference": "沙盘以多材料复现建筑地景及比例细工；积木以统一模块和可装配接口主导，小尺度不改变这一区别。"
+              },
+              {
+                "id": "knitted-textile",
+                "difference": "沙盘以多材料和比例细工复现空间；主要对象由线圈和针脚构成时归毛线。"
+              },
+              {
+                "id": "layered-paper-relief",
+                "difference": "沙盘以多材料复现建筑地景；薄纸切折与层间空隙承担主形时归纸雕。"
+              },
+              {
+                "id": "pixel-scene",
+                "difference": "体素由离散块体与网格组织空间；沙盘以不同材料和比例细工复现地景，不靠方块单元主导。"
+              }
+            ],
+            "selection_basis": "以多材料比例模型复现建筑或地景，材料区分地形、墙体、植被与细部，场地及路径关系可整体观察；微缩只是观看尺度，若全场由积木、纱线或薄纸结构主导，选对应材料入口。"
+          }
+        }
+      },
+      "identity": "以模型尺度、立体细工、可辨材料与空间关系构成的微缩场景造型，题材不限于建筑或地景。"
+    },
+    {
+      "id": "knitted-textile",
+      "name": "毛线编织",
+      "family": "constructed-scene",
+      "parent_style": null,
+      "aliases": [
+        "针织",
+        "针织材料",
+        "针织纱线"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "knitted-textile",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "已有主形的材料转译",
+              "连接与张力",
+              "触感反差",
+              "织造字形或场景"
+            ],
+            "avoid_for": [
+              "需要读清精密数据或证实实物原貌，织造转译会改变信息"
+            ],
+            "keywords": [
+              "毛线",
+              "针织",
+              "针脚",
+              "线圈",
+              "绒毛"
+            ],
+            "risks": [
+              "只有绒毛表皮，缺少织造构造",
+              "材料覆盖吞掉轮廓、文字或动作",
+              "尚未确定视觉关系就默认可爱摆件",
+              "与主导方向并列成两套冲突构图"
+            ],
+            "confusable_with": [
+              {
+                "id": "retro-commercial-illustration",
+                "difference": "复古织物印刷的景物是印在经纬底上的插画；毛线编织的物体本身由纱线和针脚构成。"
+              },
+              {
+                "id": "isometric-miniature-scene",
+                "difference": "微缩组织模型尺度与场景，针织组织材料与构造，可以按任务组合；不按对象大小或是否含建筑互斥分类。"
+              }
+            ],
+            "selection_basis": "作为有字创作的材料能力接入已确定的主形、场景或字形，以线圈、针脚及织片构成所选对象；用户只指定针织时自行选择画面组织，不以材料名称替代内容与标题设计。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "knitted-textile",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "线圈、针脚与体量的共同塑形",
+              "熟悉对象的纱线转译",
+              "角色、场景或织片构成"
+            ],
+            "avoid_for": [
+              "表达依赖锋利硬质边界、工业精密和无手工痕迹，纱线会改变所需观感",
+              "需要读清精密数据或证实实物原貌，材料转译会干扰任务"
+            ],
+            "keywords": [
+              "毛线",
+              "针织",
+              "针脚",
+              "线圈",
+              "绒毛"
+            ],
+            "risks": [
+              "针脚只是贴图",
+              "线圈吞掉五官与接触点",
+              "任何主题都变成冬日小屋。"
+            ],
+            "confusable_with": [
+              {
+                "id": "retro-commercial-illustration",
+                "difference": "复古织物印刷的景物是印在经纬底上的插画；毛线编织的物体本身由纱线和针脚构成。"
+              },
+              {
+                "id": "isometric-miniature-scene",
+                "difference": "沙盘以多材料和比例细工复现空间；主要对象由线圈和针脚构成时归毛线。"
+              }
+            ],
+            "selection_basis": "主形由线圈、针脚、缝合和纱线构成，织法随曲面转向；纱线是物体本体。照片上加绒毛或把插画印在织物上不属于此入口。"
+          }
+        }
+      },
+      "identity": "以随形线圈、针脚、织片和缝合构成物体本体的纱线造型。"
+    },
+    {
+      "id": "layered-paper-relief",
+      "name": "立体纸雕",
+      "family": "constructed-scene",
+      "parent_style": null,
+      "aliases": [
+        "分层纸雕"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "layered-paper-relief",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "层次",
+              "显露",
+              "保护",
+              "结构",
+              "轻盈感"
+            ],
+            "avoid_for": [
+              "表达需要连续纸面上的压凹击凸，分离薄片会把工艺改成叠层纸雕",
+              "必须表现软材质受压形变或真实实物原貌，平整纸片与切边会改变材料信息"
+            ],
+            "keywords": [
+              "纸雕",
+              "叠层",
+              "镂空",
+              "折面",
+              "接触阴影"
+            ],
+            "risks": [
+              "做成厚泡沫圆边或黏土团块",
+              "堆层没有视觉重点",
+              "光源方向不一致"
+            ],
+            "confusable_with": [
+              {
+                "id": "isometric-miniature-scene",
+                "difference": "微缩场景由模型尺度与空间细工组织关系；纸雕由薄纸切折、镂空与层间空隙主导造型，不按是否含建筑区分。"
+              },
+              {
+                "id": "torn-photo-collage",
+                "difference": "纸雕用纸构成物体与浅空间；撕纸用照片或文字的纸片载体叠放组织阅读。"
+              }
+            ],
+            "selection_basis": "纸的切折、镂空、薄片和层间距离构成物体及浅空间，接触阴影显示结构；平面照片纸片叠放选撕纸，连续纸面压凹凸用纸面压印方法。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "layered-paper-relief",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "薄纸切折、镂空与层距的浅空间",
+              "层影、透光、纸形与色域",
+              "具象场景、姿态或形式构成"
+            ],
+            "avoid_for": [
+              "表达需要连续纸面上的压凹击凸，分离薄片会把工艺改成叠层纸雕",
+              "必须表现软材质受压形变或真实实物原貌，平整纸片与切边会改变材料信息"
+            ],
+            "keywords": [
+              "纸雕",
+              "叠层",
+              "镂空",
+              "折面",
+              "接触阴影"
+            ],
+            "risks": [
+              "厚泡沫团块、塑料高光",
+              "全图同宽黑边",
+              "同心纸洞套所有主题。"
+            ],
+            "confusable_with": [
+              {
+                "id": "isometric-miniature-scene",
+                "difference": "沙盘以多材料复现建筑地景；薄纸切折与层间空隙承担主形时归纸雕。"
+              },
+              {
+                "id": "torn-photo-collage",
+                "difference": "纸雕用纸构成物体与浅空间；撕纸用照片或文字的纸片载体叠放组织阅读。"
+              }
+            ],
+            "selection_basis": "纸的切折、镂空、薄片和层间距离构成物体及浅空间，接触阴影显示结构；平面照片纸片叠放选撕纸，连续纸面压凹凸用纸面压印方法。"
+          }
+        }
+      },
+      "identity": "由薄纸切口、折面、镂空和层间空隙构成的实体浅浮雕造型。"
+    },
+    {
+      "id": "limited-ink-overprint",
+      "name": "套色叠印",
+      "family": "line-and-print",
+      "parent_style": null,
+      "aliases": [
+        "套色叠印插画",
+        "套色印刷",
+        "有限色叠印"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "limited-ink-overprint",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "用有限色版表现空间层次",
+              "以色层交叠组织形体与节奏",
+              "需要可见印刷质感的观点或情绪图"
+            ],
+            "avoid_for": [
+              "关键辨认依赖连续写实光影或精确原色，有限色版及叠印会改变信息",
+              "用户明确不接受色层交叠；本库以透明叠印为主导的方法无法展开"
+            ],
+            "keywords": [
+              "叠印",
+              "套色",
+              "色版",
+              "错位",
+              "半透明油墨"
+            ],
+            "risks": [
+              "只有有限色板而无可辨交叠",
+              "随机错版破坏主形"
+            ],
+            "confusable_with": [
+              {
+                "id": "decorative-illustration",
+                "difference": "叠印由透明墨层交会塑形；装饰插画由母题节奏与图案关系主导。"
+              },
+              {
+                "id": "monochrome-engraved-line",
+                "difference": "叠印关注分版覆盖；版画关注随形刻线。"
+              },
+              {
+                "id": "spot-ink-halftone",
+                "difference": "叠印需要可辨色版交会；网点需要有结构的点阵调子。"
+              },
+              {
+                "id": "retro-commercial-illustration",
+                "difference": "叠印是墨层机制，不限定年代；中期商业插画以年代造型建立身份。"
+              }
+            ],
+            "selection_basis": "可分辨墨版以透明交叠产生新色，并以套准关系组织平面形体的叠印图像。适合用文字与图像共同呈现主题。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "limited-ink-overprint",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "可辨色版覆盖与交叠新色",
+              "纯墨、露纸与版形的空间节奏"
+            ],
+            "avoid_for": [
+              "关键辨认依赖连续写实光影或精确原色，有限色版及叠印会改变信息",
+              "用户明确不接受色层交叠；本库以透明叠印为主导的方法无法展开"
+            ],
+            "keywords": [
+              "叠印",
+              "套色",
+              "色版",
+              "错位",
+              "半透明油墨"
+            ],
+            "risks": [
+              "只有有限色板而无可辨交叠",
+              "随机错版破坏主形"
+            ],
+            "confusable_with": [
+              {
+                "id": "decorative-illustration",
+                "difference": "叠印由透明墨层交会塑形；装饰插画由母题节奏与图案关系主导。"
+              },
+              {
+                "id": "monochrome-engraved-line",
+                "difference": "叠印关注分版覆盖；版画关注随形刻线。"
+              },
+              {
+                "id": "spot-ink-halftone",
+                "difference": "叠印需要可辨色版交会；网点需要有结构的点阵调子。"
+              },
+              {
+                "id": "retro-commercial-illustration",
+                "difference": "叠印是墨层机制，不限定年代；中期商业插画以年代造型建立身份。"
+              }
+            ],
+            "selection_basis": "可分辨墨版以透明交叠产生新色，并以套准关系组织平面形体的叠印图像。适合以纯画面呈现动作、关系或气氛。"
+          }
+        }
+      },
+      "identity": "可分辨墨版以透明交叠产生新色，并以套准关系组织平面形体的叠印图像。"
+    },
+    {
+      "id": "modular-brick-scene",
+      "name": "积木模型",
+      "family": "constructed-scene",
+      "parent_style": null,
+      "aliases": [
+        "模块积木场景"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "modular-brick-scene",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "搭建",
+              "协作",
+              "试错",
+              "流程",
+              "可操作机制",
+              "模型世界中的生活场景"
+            ],
+            "avoid_for": [
+              "表达依赖细腻皮肤、柔软连续材料或无模型感的现场原貌，离散零件会改变重点",
+              "用户不接受接缝、接口及模块化造型；本库装配逻辑失去可见依据"
+            ],
+            "keywords": [
+              "积木",
+              "模块",
+              "接口",
+              "装配",
+              "玩具"
+            ],
+            "risks": [
+              "无关品牌标识抢占主题",
+              "字形展台只重复标题而没有所需的构造意味",
+              "接口不服务装配",
+              "摆件与内容无关"
+            ],
+            "confusable_with": [
+              {
+                "id": "isometric-miniature-scene",
+                "difference": "微缩场景不限题材，以模型尺度与空间关系组织；积木以可辨模块、接口和装配逻辑主导造型。"
+              },
+              {
+                "id": "pixel-scene",
+                "difference": "二维像素以像素簇构形，三维体素以离散块体构形；积木还须有可辨接口与装配逻辑。"
+              }
+            ],
+            "selection_basis": "硬质模块通过可辨接口、接缝或凸点形成装配逻辑；不是任意方块世界。即使呈微缩建筑，模块装配主导仍选此项；无接口的离散块体选体素子型。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "modular-brick-scene",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "模块重复与装配轮廓",
+              "接口、色块与空间节奏",
+              "静态构成或模型生活场景"
+            ],
+            "avoid_for": [
+              "表达依赖细腻皮肤、柔软连续材料或无模型感的现场原貌，离散零件会改变重点",
+              "用户不接受接缝、接口及模块化造型；本库装配逻辑失去可见依据"
+            ],
+            "keywords": [
+              "积木",
+              "模块",
+              "接口",
+              "装配",
+              "玩具"
+            ],
+            "risks": [
+              "无接口的方块",
+              "全部细节一样鲜艳",
+              "用真实手臂随意替换玩具肢体。"
+            ],
+            "confusable_with": [
+              {
+                "id": "isometric-miniature-scene",
+                "difference": "沙盘以多材料复现建筑地景及比例细工；积木以统一模块和可装配接口主导，小尺度不改变这一区别。"
+              },
+              {
+                "id": "pixel-scene",
+                "difference": "二维像素以像素簇构形，三维体素以离散块体构形；积木还须有可辨接口与装配逻辑。"
+              }
+            ],
+            "selection_basis": "硬质模块通过可辨接口、接缝或凸点形成装配逻辑；不是任意方块世界。即使呈微缩建筑，模块装配主导仍选此项；无接口的离散块体选体素子型。"
+          }
+        }
+      },
+      "identity": "以硬质模块、可辨接口和连接件装配成形的积木模型造型。"
+    },
+    {
+      "id": "monochrome-engraved-line",
+      "name": "刻线版画插画",
+      "family": "line-and-print",
+      "parent_style": null,
+      "aliases": [
+        "铜版画插画",
+        "黑白刻线插画",
+        "彩色刻线版画",
+        "刻线版画",
+        "单色刻线版画"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "monochrome-engraved-line",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "内在冲突与注意力",
+              "耐心与细致观察",
+              "复杂机制",
+              "需要精密纹理、鲜明形体与空间层次的场景"
+            ],
+            "avoid_for": [
+              "主要依靠无刻线的纯净色面、软糯形体或连续渐变传达，细密刻线会削弱该效果",
+              "必须在极小尺寸读取复杂细节，排线容易糊成块"
+            ],
+            "keywords": [
+              "雕版",
+              "排线",
+              "交叉线",
+              "黑白",
+              "随形",
+              "着色",
+              "彩色版画"
+            ],
+            "risks": [
+              "平均排线使缩略图糊成灰",
+              "精刻物件抢走题意"
+            ],
+            "confusable_with": [
+              {
+                "id": "expressive-ink-line",
+                "difference": "版画以系统刻线形成调子；速写以观察线和省略形成结构。"
+              },
+              {
+                "id": "spot-ink-halftone",
+                "difference": "版画通过线距与交叉排线构成灰阶；半色调通过点阵构成灰阶。"
+              },
+              {
+                "id": "limited-ink-overprint",
+                "difference": "版画身份来自刻线；叠印身份来自可识别色版覆盖。"
+              }
+            ],
+            "selection_basis": "以随形刻线、交叉排线、实墨和露纸构成明暗体积的版画插画。适合用文字与图像共同呈现主题。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "monochrome-engraved-line",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "线向、线距、实墨与露纸的调子",
+              "刻线区分材料、形体和空间",
+              "人物、静物、环境或形式作品"
+            ],
+            "avoid_for": [
+              "主要依靠无刻线的纯净色面、软糯形体或连续渐变传达，细密刻线会削弱该效果",
+              "必须在极小尺寸读取复杂细节，排线容易糊成块"
+            ],
+            "keywords": [
+              "雕版",
+              "排线",
+              "交叉线",
+              "黑白",
+              "随形",
+              "着色",
+              "彩色版画"
+            ],
+            "risks": [
+              "平均排线使缩略图糊成灰",
+              "精刻物件抢走题意"
+            ],
+            "confusable_with": [
+              {
+                "id": "expressive-ink-line",
+                "difference": "版画以系统刻线形成调子；速写以观察线和省略形成结构。"
+              },
+              {
+                "id": "spot-ink-halftone",
+                "difference": "版画通过线距与交叉排线构成灰阶；半色调通过点阵构成灰阶。"
+              },
+              {
+                "id": "limited-ink-overprint",
+                "difference": "版画身份来自刻线；叠印身份来自可识别色版覆盖。"
+              }
+            ],
+            "selection_basis": "以随形刻线、交叉排线、实墨和露纸构成明暗体积的版画插画。适合以纯画面呈现动作、关系或气氛。"
+          }
+        }
+      },
+      "identity": "以随形刻线、交叉排线、实墨和露纸构成明暗体积的版画插画。"
+    },
+    {
+      "id": "pixel-scene",
+      "name": "像素艺术",
+      "family": "constructed-scene",
+      "parent_style": null,
+      "aliases": [
+        "二维像素场景",
+        "voxel-scene",
+        "体素场景",
+        "二维像素",
+        "体素",
+        "像素艺术",
+        "二维像素（可选体素子型）",
+        "像素场景"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "pixel-scene",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "过程",
+              "探索",
+              "搭建",
+              "有节奏的行动"
+            ],
+            "avoid_for": [
+              "要求无离散网格痕迹的写实摄影或平滑曲面，像素单元会改变视觉身份",
+              "大量小号中文必须直接做成像素字且仍在缩略图中可读，字形信息超出可用网格；可独立排字时另作布局"
+            ],
+            "keywords": [
+              "像素",
+              "体素",
+              "网格",
+              "有限色阶",
+              "图块"
+            ],
+            "risks": [
+              "普通照片打马赛克",
+              "二维与体素无意混用",
+              "二维关卡机制被静物陈列或体素场景替代"
+            ],
+            "confusable_with": [
+              {
+                "id": "modular-brick-scene",
+                "difference": "像素或体素以离散网格塑形；积木以模块连接和凸点结构塑形。"
+              },
+              {
+                "id": "geometric-flat-illustration",
+                "difference": "像素有阶梯网格与簇形；几何可用连续实色轮廓。"
+              },
+              {
+                "id": "isometric-miniature-scene",
+                "difference": "微缩场景以模型尺度与细工组织空间；像素以离散网格和簇形构造轮廓，不按是否含建筑区分。"
+              }
+            ],
+            "selection_basis": "用离散网格单元、阶梯轮廓和连贯簇形主动构造形体的像素艺术。适合用文字与图像共同呈现主题。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "pixel-scene",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "统一格点与像素簇塑形",
+              "有限色阶和剪影的空间组织",
+              "人物、静物、环境或抽象构成"
+            ],
+            "avoid_for": [
+              "要求无离散网格痕迹的写实摄影或平滑曲面，像素单元会改变视觉身份"
+            ],
+            "keywords": [
+              "像素",
+              "体素",
+              "网格",
+              "有限色阶",
+              "图块"
+            ],
+            "risks": [
+              "普通照片打马赛克",
+              "二维与体素无意混用"
+            ],
+            "confusable_with": [
+              {
+                "id": "modular-brick-scene",
+                "difference": "像素或体素以离散网格塑形；积木以模块连接和凸点结构塑形。"
+              },
+              {
+                "id": "geometric-flat-illustration",
+                "difference": "像素有阶梯网格与簇形；几何可用连续实色轮廓。"
+              },
+              {
+                "id": "isometric-miniature-scene",
+                "difference": "像素以离散单元为身份；等距微缩以投影和模型尺度为身份。"
+              }
+            ],
+            "selection_basis": "用离散网格单元、阶梯轮廓和连贯簇形主动构造形体的像素艺术。适合以纯画面呈现动作、关系或气氛。"
+          }
+        }
+      },
+      "identity": "用离散网格单元、阶梯轮廓和连贯簇形主动构造形体的像素艺术。"
+    },
+    {
+      "id": "retro-commercial-illustration",
+      "name": "20 世纪中期商业插画",
+      "family": "graphic-design",
+      "parent_style": null,
+      "aliases": [
+        "复古商业插画",
+        "复古插画"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "retro-commercial-illustration",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "沟通",
+              "生活角色",
+              "旅行",
+              "探索",
+              "鲜明主张"
+            ],
+            "avoid_for": [
+              "必须原样复现当代界面、标识或现场细节，而年代化造型会改变所需信息",
+              "用户明确要求消除年代联想，本库广告与旅行海报语汇会带来额外含义"
+            ],
+            "keywords": [
+              "20世纪中期广告",
+              "海报",
+              "有限印刷色",
+              "概括造型",
+              "旅行海报",
+              "干净色面",
+              "织物承印"
+            ],
+            "risks": [
+              "旧滤镜取代年代造型",
+              "复古道具替代内容关联",
+              "时代错位、旅行与人物广告子型混用，导致概念封面的标题和事件关系丢失"
+            ],
+            "confusable_with": [
+              {
+                "id": "geometric-flat-illustration",
+                "difference": "中期商业插画依年代人物比例和印刷概括；几何插画依简化实色形体。"
+              },
+              {
+                "id": "spot-ink-halftone",
+                "difference": "中期商业插画的身份来自造型年代；半色调来自网点再现。"
+              },
+              {
+                "id": "limited-ink-overprint",
+                "difference": "中期商业插画可用叠印但不以它定义；套色入口必须可辨墨版交会。"
+              },
+              {
+                "id": "knitted-textile",
+                "difference": "织物承印分支是插画印在经纬底上；针织是纱线与线圈构成实体。"
+              }
+            ],
+            "selection_basis": "以20世纪中期印刷插画的概括比例、姿态和色块造型形成形象的商业插画。适合用文字与图像共同呈现主题。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "retro-commercial-illustration",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "自然人物与概括色面的杂志印刷插画",
+              "人物、静物与环境的印刷式造型"
+            ],
+            "avoid_for": [
+              "必须原样复现当代界面、标识或现场细节，而年代化造型会改变所需信息",
+              "用户明确要求消除年代联想，本库广告与旅行海报语汇会带来额外含义"
+            ],
+            "keywords": [
+              "20世纪中期广告",
+              "海报",
+              "有限印刷色",
+              "概括造型",
+              "旅行海报",
+              "干净色面",
+              "织物承印"
+            ],
+            "risks": [
+              "旧滤镜取代年代造型",
+              "复古道具替代内容关联",
+              "厚重笔触与连续写实明暗使画面偏成油画",
+              "以夸张长肢体或动画概念画替代本入口的具象人物方向"
+            ],
+            "confusable_with": [
+              {
+                "id": "geometric-flat-illustration",
+                "difference": "中期商业插画依年代人物比例和印刷概括；几何插画依简化实色形体。"
+              },
+              {
+                "id": "spot-ink-halftone",
+                "difference": "中期商业插画的身份来自造型年代；半色调来自网点再现。"
+              },
+              {
+                "id": "limited-ink-overprint",
+                "difference": "中期商业插画可用叠印但不以它定义；套色入口必须可辨墨版交会。"
+              },
+              {
+                "id": "knitted-textile",
+                "difference": "织物承印分支是插画印在经纬底上；针织是纱线与线圈构成实体。"
+              }
+            ],
+            "selection_basis": "以自然人物、适度明暗与概括环境色面构成的20世纪中期杂志商业插画。整体保持印刷插画效果；油画、动画概念画及高度几何化海报另行选择，不自动混入本入口。"
+          }
+        }
+      },
+      "identity": "以20世纪中期印刷插画的概括比例、姿态和色块造型形成形象的商业插画。"
+    },
+    {
+      "id": "spot-ink-halftone",
+      "name": "半色调网点图像",
+      "family": "line-and-print",
+      "parent_style": null,
+      "aliases": [
+        "专色网点图像",
+        "网点印刷",
+        "专色网点"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "spot-ink-halftone",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "新闻感",
+              "公共话题",
+              "复古",
+              "强对比"
+            ],
+            "avoid_for": [
+              "要求光洁无纹理的数码画面",
+              "细小字号密集且不能独立排字"
+            ],
+            "keywords": [
+              "网点",
+              "半色调",
+              "单墨",
+              "双色",
+              "粗网"
+            ],
+            "risks": [
+              "随机噪点冒充网点",
+              "网点吞没轮廓和关键细节",
+              "小点阵概念子型与一般半色调的图像尺度混淆"
+            ],
+            "confusable_with": [
+              {
+                "id": "monochrome-engraved-line",
+                "difference": "半色调以点面积构成明暗；版画以刻线密度构成明暗。"
+              },
+              {
+                "id": "limited-ink-overprint",
+                "difference": "半色调关注网点调子；叠印关注透明墨版交会。"
+              },
+              {
+                "id": "retro-commercial-illustration",
+                "difference": "半色调不限定年代造型；中期商业插画有具体年代比例与姿态语言。"
+              }
+            ],
+            "selection_basis": "由有结构的网点中间调、实墨与露纸再现形体的半色调图像。适合用文字与图像共同呈现主题。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "spot-ink-halftone",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "点阵中间调与实墨、纸白",
+              "基于取景和大调子的印刷图像"
+            ],
+            "avoid_for": [
+              "要求光洁无纹理的数码画面"
+            ],
+            "keywords": [
+              "网点",
+              "半色调",
+              "单墨",
+              "双色",
+              "粗网"
+            ],
+            "risks": [
+              "随机噪点冒充网点",
+              "网点吞没轮廓和关键细节"
+            ],
+            "confusable_with": [
+              {
+                "id": "monochrome-engraved-line",
+                "difference": "半色调以点面积构成明暗；版画以刻线密度构成明暗。"
+              },
+              {
+                "id": "limited-ink-overprint",
+                "difference": "半色调关注网点调子；叠印关注透明墨版交会。"
+              },
+              {
+                "id": "retro-commercial-illustration",
+                "difference": "半色调不限定年代造型；中期商业插画有具体年代比例与姿态语言。"
+              }
+            ],
+            "selection_basis": "由有结构的网点中间调、实墨与露纸再现形体的半色调图像。适合以纯画面呈现动作、关系或气氛。"
+          }
+        }
+      },
+      "identity": "由有结构的网点中间调、实墨与露纸再现形体的半色调图像。"
+    },
+    {
+      "id": "swiss-international",
+      "name": "瑞士国际主义平面设计",
+      "family": "graphic-design",
+      "parent_style": null,
+      "aliases": [
+        "swiss-style",
+        "国际主义平面风格",
+        "瑞士国际主义"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "swiss-international",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "信息秩序",
+              "清晰对照",
+              "理性主张",
+              "公共传播"
+            ],
+            "avoid_for": [
+              "表达主要依赖亲昵手绘、柔软材质或随性笔触，信息秩序只是陪衬",
+              "必须让沉浸场景占据全部画面，且不允许明显的文字与版面组织"
+            ],
+            "keywords": [
+              "网格",
+              "无衬线",
+              "非对称",
+              "留白",
+              "信息层级"
+            ],
+            "risks": [
+              "大字加红黑被误当作瑞士风格",
+              "关键中文出现错字或过小，需要逐字核验并按能力选择排字路线",
+              "照搬拉丁字母拆分导致中文词组或否定关系失读"
+            ],
+            "confusable_with": [
+              {
+                "id": "editorial-design",
+                "difference": "字图穿插由共享轮廓或遮挡空间主导；瑞士由无衬线、非对称网格和信息层级主导。"
+              },
+              {
+                "id": "geometric-flat-illustration",
+                "difference": "几何插画靠概括形体关系表达；瑞士靠无衬线网格与文字层级组织信息。"
+              },
+              {
+                "id": "diffuse-color-field",
+                "difference": "渐变由色场形状和过渡主导；瑞士由无衬线网格与信息层级主导，背景渐变不是充分条件。"
+              },
+              {
+                "id": "anthropic-brand-editorial",
+                "difference": "瑞士以无衬线、非对称网格与信息秩序主导；Anthropic 品牌编辑视觉还需暖色体系、手绘研究图形与清楚的阅读层级共同建立身份。"
+              }
+            ],
+            "selection_basis": "非对称网格、比例级差、精确对齐与图像或几何单元的节奏共同组织视觉秩序。 本路线以文字信息层级与图像构成共同完成编排。"
+          }
+        },
+        "wordless": {
+          "status": "conditional",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "swiss-international",
+            "mode": "wordless",
+            "status": "conditional",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "条件适配下的对齐、级差与配重",
+              "图像单元、边界和间隔的组织"
+            ],
+            "avoid_for": [
+              "要求完整瑞士信息排版但不允许文字"
+            ],
+            "keywords": [
+              "比例",
+              "非对称",
+              "几何序列",
+              "负形"
+            ],
+            "risks": [
+              "空字框与占位网格",
+              "红黑几何堆放",
+              "把具体艺术样本等同于完整排版体系。"
+            ],
+            "confusable_with": [
+              {
+                "id": "geometric-flat-illustration",
+                "difference": "本入口：只作瑞士构成方法的无字适配：用比例、非对称平衡、几何序列或摄影裁切形成独立视觉秩序。 相邻入口：以实色色面之间的面积差、方向和遮挡组织主形；即使没有细节，剪影和负形也要值得看。"
+              },
+              {
+                "id": "diffuse-color-field",
+                "difference": "本入口：只作瑞士构成方法的无字适配：用比例、非对称平衡、几何序列或摄影裁切形成独立视觉秩序。 相邻入口：色域面积、流向与软硬边界构成画面本身；先判断视觉张力，再决定与文章气氛的联系。"
+              }
+            ],
+            "selection_basis": "非对称网格、比例级差、精确对齐与图像或几何单元的节奏共同组织视觉秩序。 本路线选择能以比例、图像裁切或几何节奏独立成立的构成。",
+            "conditions": [
+              "仅作瑞士构成方法无字适配，须有可指认的比例、网格、对齐及非对称配重，不等同完整信息排版系统。"
+            ]
+          }
+        }
+      },
+      "identity": "非对称网格、比例级差、精确对齐与图像或几何单元的节奏共同组织视觉秩序。"
+    },
+    {
+      "id": "torn-photo-collage",
+      "name": "撕纸拼贴",
+      "family": "collage",
+      "parent_style": null,
+      "aliases": [
+        "撕纸照片拼贴",
+        "复古手撕拼贴",
+        "手撕复古拼贴",
+        "撕纸摄影拼贴"
+      ],
+      "routes": {
+        "with-text": {
+          "status": "supported",
+          "style": "with-text.md",
+          "meta": {
+            "style_id": "torn-photo-collage",
+            "mode": "with-text",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "断裂",
+              "冲突",
+              "重组",
+              "记忆",
+              "人物情绪",
+              "复古编辑构图"
+            ],
+            "avoid_for": [
+              "必须把照片作为未经重组的现场证据，撕裂与拼接会改变事实关系",
+              "要求连续光洁表面且不能显露断口，纸边语言会与目标冲突"
+            ],
+            "keywords": [
+              "撕纸",
+              "纸边",
+              "断口",
+              "纤维",
+              "碎片"
+            ],
+            "risks": [
+              "主素材替换后含义不变",
+              "碎片等大等亮无主次",
+              "标题与照片只有并列或无作用遮挡",
+              "胶带纸旧抢焦点或素材阶调缺少联系",
+              "复古与现代纸片语言未选定，标题载体和照片阶调分裂"
+            ],
+            "confusable_with": [
+              {
+                "id": "layered-paper-relief",
+                "difference": "纸雕用纸构成物体与浅空间；撕纸用照片或文字的纸片载体叠放组织阅读。"
+              }
+            ],
+            "selection_basis": "默认复古编辑拼贴：照片、文字与报刊薄纸通过断口、裁切、叠放、印刷反差和辅助编辑材料形成主视觉；现代薄纸方向是明确选择的扩展，不以照片周围加撕边代替拼贴组织。"
+          }
+        },
+        "wordless": {
+          "status": "supported",
+          "style": "wordless.md",
+          "meta": {
+            "style_id": "torn-photo-collage",
+            "mode": "wordless",
+            "status": "supported",
+            "uses": [
+              "cover",
+              "body-illustration",
+              "poster",
+              "social-post"
+            ],
+            "fits": [
+              "影像与撕口、纤维边的共同组织",
+              "纸层断接、尺度和阶调的相遇"
+            ],
+            "avoid_for": [
+              "必须把照片作为未经重组的现场证据，撕裂与拼接会改变事实关系",
+              "要求连续光洁表面且不能显露断口，纸边语言会与目标冲突"
+            ],
+            "keywords": [
+              "撕纸",
+              "纸边",
+              "断口",
+              "纤维",
+              "碎片"
+            ],
+            "risks": [
+              "完整照片加撕边外框",
+              "随机旧报纸",
+              "胶带与污渍抢焦",
+              "残留空标签。",
+              "面部撕口使分享或积累主题被读成伤害、身份破裂或秘密揭露"
+            ],
+            "confusable_with": [
+              {
+                "id": "layered-paper-relief",
+                "difference": "本入口：实体薄纸、影像片段和裂口共同建立关系；决定哪里完整、哪里被揭示或覆盖。 相邻入口：主轮廓先统领纸层，切、折、镂空与层间距离共同形成浅空间；题材可以纯形态，也可以具体场景。"
+              }
+            ],
+            "selection_basis": "承载影像的实体薄纸以撕口纤维、切边、叠放及印刷阶调组织关系，纸片接边主导表达。 无字路线按本图的独立观看潜力与媒介能力选择，文章关系可在构思中形成或最后核对。"
+          }
+        }
+      },
+      "identity": "承载影像的实体薄纸以撕口纤维、切边、叠放及印刷阶调组织关系，纸片接边主导表达。"
+    }
+  ]
+}
