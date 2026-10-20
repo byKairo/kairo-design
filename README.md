@@ -1,5 +1,7 @@
 # Kairo Design
 
+简体中文 | [English](./README.en.md)
+
 Kairo Design 是一个给 AI Agent 使用的视觉设计 Skill。把文章、想法和素材做成封面、正文配图或海报，支持有字与无字两条创作路线、20 种视觉风格和图片修改。
 
 > [!IMPORTANT]
