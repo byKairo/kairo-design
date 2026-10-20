@@ -170,5 +170,4 @@ screenshots/            40 张案例原图
 
 ## 致谢
 
-- 设计与维护：[@byKairo](https://github.com/byKairo)
-- 仓库说明的信息结构参考 [Punk-Skill](https://github.com/adrianpunk/Punk-Skill)；本仓库未复制其风格正文、案例图片或许可文本。
+- 设计与维护：[@byKairo](https://github.com/byKairo)  
